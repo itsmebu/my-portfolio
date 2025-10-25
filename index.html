@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Philip | Web Developer & Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#home" class="logo">
+        John <span>Philip</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="gradient-btn" onclick="scrollToContact()">Contact Me</button>
+
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>John Philip</span></h1>
+        <h3>
+          I'm a <span class="typing-text">Web Developer</span>
+        </h3>
+        <p>
+          I'm a passionate full-stack developer and data analyst specializing in creating dynamic, responsive web applications and extracting meaningful insights from complex datasets. I bridge the gap between data and user experience.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://github.com/itsmebu" target="_blank" aria-label="GitHub">
+            <i class="bx bxl-github"></i>
+          </a>
+
+          <a href="https://www.facebook.com/johnfhilip.parilla" target="_blank" aria-label="Facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn">Hire Me</a>
+          <a href="#projects" class="btn">View Projects</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="Philip.jpg" alt="John Philip - Web Developer & Data Analyst">
+      </div>
+      
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="lip.jpg" alt="John Philip">
+      </div>
+
+      <div class="about-content">
+        <h2>About <span>Me</span></h2>
+        <p>I'm a passionate full-stack developer and data analyst with 3+ years of experience creating digital solutions and extracting insights from data. My journey began with computer science studies, where I discovered my love for both building intuitive user experiences and uncovering patterns in complex datasets.</p>
+        
+        <p>I specialize in Python for data analysis and machine learning, along with modern web technologies like PHP, JavaScript, and React. My unique combination of skills allows me to not only build powerful applications but also implement data-driven features that enhance user engagement and business intelligence.</p>
+        
+        <div class="skills">
+          <h3>Technical Skills</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span>Python & Data Analysis</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>PHP & Backend Development</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>JavaScript/React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span>C Programming</span>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="section-heading">My <span>Services</span></h2>
+      
+      <div class="services-container">
+        <div class="service-card">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>Custom website development using modern technologies and best practices to create fast, responsive, and scalable web applications.</p>
+        </div>
+        
+        <div class="service-card">
+          <i class="bx bx-data"></i>
+          <h3>Data Analytics</h3>
+          <p>Transforming raw data into actionable insights using Python, statistical analysis, and visualization techniques to drive business decisions.</p>
+        </div>
+        
+        <div class="service-card">
+          <i class="bx bx-mobile-alt"></i>
+          <h3>Full-Stack Solutions</h3>
+          <p>End-to-end development from database design to frontend implementation, creating cohesive and efficient digital products.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-heading">My <span>Projects</span></h2>
+      
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="nba.jpg" alt="NBA Data Analytics Project">
+          </div>
+          <div class="project-content">
+            <h3>NBA Data Analytics</h3>
+            <p>A comprehensive data analysis project using Python to explore NBA player statistics, team performance trends, and predictive modeling for game outcomes. Features interactive visualizations and machine learning algorithms.</p>
+            <div class="tech-used">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+              <span>Scikit-learn</span>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-img">
+            <img src="scs.jpg" alt="Smart Coffee Shop System">
+          </div>
+          <div class="project-content">
+            <h3>Smart Coffee Shop</h3>
+            <p>A full-stack PHP application for coffee shop management featuring inventory tracking, order processing, customer loyalty programs, and sales analytics. Includes admin dashboard and customer-facing ordering system.</p>
+            <div class="tech-used">
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>JavaScript</span>
+              <span>Bootstrap</span>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-img">
+            <img src="rcp.jpg" alt="Jelas Receipt System">
+          </div>
+          <div class="project-content">
+            <h3>Jelas Receipt System</h3>
+            <p>A C programming project that creates professional receipts with itemized billing, tax calculations, and customer information. Features include receipt formatting, total calculations, and data persistence.</p>
+            <div class="tech-used">
+              <span>C Language</span>
+              <span>File I/O</span>
+              <span>Data Structures</span>
+              <span>Console UI</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-heading">Contact <span>Me</span></h2>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="contact-heading">Let's Connect</h3>
+          <p class="contact-description">I'm currently available for freelance work and full-time positions. Whether you need a web application, data analysis, or both - let's discuss how I can help bring your project to life!</p>
+          
+          <div class="contact-items">
+            <div class="contact-item">
+              <i class="bx bx-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>parillajohnphilip2@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bx bx-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>09318771165</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bx bx-map"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Tamiao, Bantayan, Cebu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/itsmebu" target="_blank" aria-label="GitHub">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.facebook.com/johnfhilip.parilla" target="_blank" aria-label="Facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+        </div>
+        
+        <a href="#home" class="back-to-top">
+          <i class="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
